@@ -83,7 +83,7 @@ def main(command, *args):
             args = ['join_cluster']
             host = node.split('/', 1)
             if len(host) > 1:
-                args.append(host.pop())
+                args.append('--%s' % host.pop())
             args.append(host.pop())
             run('/usr/sbin/rabbitmqctl', args, user=USER, env=ENV).wait()
 
