@@ -5,7 +5,8 @@ Usefult image for rabbitmq containers.
 
 
 Environment variables
-+++++++++++++++++++++
+---------------------
+
 
     VOLUMES:
       /data/log
